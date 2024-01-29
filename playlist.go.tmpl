@@ -1,0 +1,7 @@
+#EXTM3U
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",{{- if ne .PrimaryLanguage "" -}}LANGUAGE="{{ .PrimaryLanguage }}",{{- end -}}{{- if ne .PrimaryAutoselect "" -}}AUTOSELECT={{ .PrimaryAutoselect }},{{- end -}}{{- if ne .PrimaryDefault "" -}}DEFAULT={{ .PrimaryDefault }},{{- end -}}NAME="Original",CHANNELS="2",URI="../media/a_index.m3u8"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",{{- if ne .ADLanguage "" -}}LANGUAGE="{{ .ADLanguage }}",{{- end -}}{{- if ne .ADAutoselect "" -}}AUTOSELECT={{ .ADAutoselect }},{{- end -}}{{- if ne .ADDefault "" -}}DEFAULT={{ .ADDefault }},{{- end -}}NAME="English [AD]",CHARACTERISTICS="public.accessibility.describes-video",CHANNELS="2",URI="../media/ad_index.m3u8"
+
+#EXT-X-STREAM-INF:BANDWIDTH=6610972,AVERAGE-BANDWIDTH=4455000,RESOLUTION=1920x800,FRAME-RATE=24.000,CODECS="avc1.64002A,mp4a.40.2",AUDIO="audio"
+../media/v_index.m3u8
+

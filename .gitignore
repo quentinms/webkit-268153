@@ -19,3 +19,7 @@
 
 # Go workspace file
 go.work
+media/audio*.mp4
+media/audio_ad*.mp4
+media/video*.mp4
+.DS_Store
