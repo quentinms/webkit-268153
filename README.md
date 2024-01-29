@@ -95,4 +95,9 @@ Expected: Primary
 Primary: language="en", AUTOSELECT=YES  
 AD: language="en", AUTOSELECT=NO  
 Actual: Primary  
-Expected: Primary  
+Expected: Primary 
+
+Primary: language="en", AUTOSELECT=NO  
+AD: language="en", AUTOSELECT=YES  
+Actual: Primary  
+Expected: AD 
